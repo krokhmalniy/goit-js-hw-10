@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Montserrat+Alternates:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Snackbar</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
@@ -30,6 +36,27 @@
         </h1>
         <a class="back-link" href="./index.html">Go back</a>
       </div>
+
+      <form class="form">
+  <label class="labelDelay">
+    Delay (ms) <br>
+    <input class="inputDelay" type="number" name="delay" required />
+  </label>
+
+  <fieldset class="formField">
+    <legend>State</legend>
+    <label class="formField-label">
+      <input type="radio" name="state" value="fulfilled" required />
+      Fulfilled
+    </label>
+    <label class="formField-label">
+      <input type="radio" name="state" value="rejected" required />
+      Rejected
+    </label>
+  </fieldset>
+
+  <button class="formButton" type="submit">Create notification</button>
+</form>
     </main>
     <script type="module" src="./js/2-snackbar.js"></script>
   </body>
